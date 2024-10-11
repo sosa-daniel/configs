@@ -18,7 +18,7 @@ cd home
 
 #wget https://raw.githubusercontent.com/sosa-daniel/configs/master/bash/.bash_aliases
 wget https://raw.githubusercontent.com/sosa-daniel/configs/master/tmux/.tmux.conf
-#git clone https://github.com/tmux-plugins/tpm .tmux/plugins/tpm
+git clone https://github.com/tmux-plugins/tpm .tmux/plugins/tpm
 
 ## create RSA keypair for persistence over SSH
 #mkdir -p .ssh
