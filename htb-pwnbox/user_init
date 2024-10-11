@@ -16,3 +16,6 @@ cp -af ~/my_data/home/. ~/
 
 # load mate-terminal profiles
 #source ~/my_data/import-mate-terminal.sh
+
+git clone https://github.com/tmux-plugins/tpm .tmux/plugins/tpm
+~/.tmux/plugins/tpm/bin/install_plugins
