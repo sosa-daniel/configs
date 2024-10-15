@@ -1,4 +1,6 @@
 # HackTheBox Parrot Pwnbox persistence
+## load persistence
+`curl https://raw.githubusercontent.com/sosa-daniel/configs/master/htb-pwnbox/init-pwnbox.sh | sh`
 
 ## export-mate-terminal.sh
 
