@@ -1,6 +1,12 @@
 # Purpose
 Various configuration files to keep environments as homogeneous as possible across all devices.
 
+## Load shell configs
+```
+curl https://raw.githubusercontent.com/sosa-daniel/configs/master/htb-pwnbox/init-pwnbox.sh | sh
+
+```
+
 # Repository Structure
 
 | # | | Details |
