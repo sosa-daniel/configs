@@ -1,8 +1,8 @@
 # Ctrl-Backspace: delete previous word
 "\C-H": shell-backward-kill-word
 
-#set keymap vi-insert
-"jk": "\e"
-
 #enable vi keybindings where available (like bash)
 set editing-mode vi
+
+#set keymap vi-insert
+"jk": "\e"
