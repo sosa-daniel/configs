@@ -1,6 +1,12 @@
 #enable vi mode
 set -o vi
 
+
+
+# Set the Terminal Prompt PS1 variable, resulting in 
+# ┌──[21/Oct/2024 06:19:55 PM]─[username@hostname]─[~]
+# └──╼ $ 
+
 # Start with a blank PS1 variable
 PS1=""
 
@@ -14,7 +20,7 @@ PS1+="\e[m"
 # Start Light Blue
 PS1+="\[\e[1;34m\]"
 # Date and Time
-PS1+="$(date +%D-%r)"
+PS1+="$(date '+%d/%b/%Y %r')"
 # End color
 PS1+="\e[m"
 
