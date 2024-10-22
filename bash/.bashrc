@@ -5,14 +5,17 @@ set -o vi
 # Set the Terminal Prompt PS1 variable, resulting in 
 # ┌──[Oct/21/2024 6:36 PM]─[username@hostname]─[~]
 # └──╼ $ 
+# Those are 4 elements (timestamp, username, hostname, and working directory)
+# separated with some text strings, adding a bit of color.
+# I like breaking out the variable using concatenation to better understand 
+# what is going on:
 
-
-# Start with a blank PS1 variable
+# Begin with a blank PS1 variable
 PS1=""
 
 # Start Light green
 PS1+="\[\e[1;32m\]"
-# Start the prompt text
+# First text string
 PS1+="┌──["
 # End color
 PS1+="\e[m"
@@ -26,7 +29,7 @@ PS1+="\e[m"
 
 # Start Light green
 PS1+="\[\e[1;32m\]"
-# Continue text
+# Another separating text string
 PS1+="]─["
 # End color
 PS1+="\e[m"
@@ -36,7 +39,7 @@ PS1+="\u"
 
 # Start Light green
 PS1+="\[\e[1;32m\]"
-# @
+# @ sign between user and host
 PS1+="@"
 # End color
 PS1+="\e[m"
@@ -50,15 +53,18 @@ PS1+="\e[m"
 
 # Start Light green
 PS1+="\[\e[1;32m\]"
-# Continue text
+# Another separating text string
 PS1+="]─["
 # End color
 PS1+="\e[m"
 
-# PWD
+# PWD (no color)
 PS1+="\w"
 
 # Start Light green
 PS1+="\[\e[1;32m\]"
-# Continue text
+# Final text
 PS1+="]\n└──╼ $ "
+# Notice no "End color", user input will also be light green
+
+
