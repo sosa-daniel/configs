@@ -1,7 +1,6 @@
 #enable vi mode
 set -o vi
 
-
 # Set the Terminal Prompt PS1 variable, resulting in 
 # ┌──[Oct/21/2024 6:36 PM]─[username@hostname]─[~]
 # └──╼ $ 
@@ -18,21 +17,21 @@ PS1+="\[\e[1;32m\]"
 # First text string
 PS1+="┌──["
 # End color
-PS1+="\e[m"
+PS1+="\[\em\]"
 
 # Start Light Blue
 PS1+="\[\e[1;34m\]"
 # Date and Time
 PS1+='\D{%b/%d/%Y %-I:%M %p}'
 # End color
-PS1+="\e[m"
+PS1+="\[\em\]"
 
 # Start Light green
 PS1+="\[\e[1;32m\]"
 # Another separating text string
 PS1+="]─["
 # End color
-PS1+="\e[m"
+PS1+="\[\em\]"
 
 # Username (no color)
 PS1+="\u"
@@ -42,21 +41,21 @@ PS1+="\[\e[1;32m\]"
 # @ sign between user and host
 PS1+="@"
 # End color
-PS1+="\e[m"
+PS1+="\[\em\]"
 
 # Start Light Blue
 PS1+="\[\e[1;34m\]"
 # Hostname
 PS1+="\h"
 # End color
-PS1+="\e[m"
+PS1+="\[\em\]"
 
 # Start Light green
 PS1+="\[\e[1;32m\]"
 # Another separating text string
 PS1+="]─["
 # End color
-PS1+="\e[m"
+PS1+="\[\em\]"
 
 # PWD (no color)
 PS1+="\w"
@@ -65,6 +64,6 @@ PS1+="\w"
 PS1+="\[\e[1;32m\]"
 # Final text
 PS1+="]\n└──╼ $ "
-# Notice no "End color", user input will also be light green
-
+# End color
+PS1+="\[\em\]"
 
