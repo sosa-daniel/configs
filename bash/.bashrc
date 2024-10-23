@@ -17,21 +17,21 @@ PS1+="\[\e[1;32m\]"
 # First text string
 PS1+="┌──["
 # End color
-PS1+="\[\em\]"
+PS1+="\[\e[m\]"
 
 # Start Light Blue
 PS1+="\[\e[1;34m\]"
 # Date and Time
 PS1+='\D{%b/%d/%Y %-I:%M %p}'
 # End color
-PS1+="\[\em\]"
+PS1+="\[\e[m\]"
 
 # Start Light green
 PS1+="\[\e[1;32m\]"
 # Another separating text string
 PS1+="]─["
 # End color
-PS1+="\[\em\]"
+PS1+="\[\e[m\]"
 
 # Username (no color)
 PS1+="\u"
@@ -41,21 +41,21 @@ PS1+="\[\e[1;32m\]"
 # @ sign between user and host
 PS1+="@"
 # End color
-PS1+="\[\em\]"
+PS1+="\[\e[m\]"
 
 # Start Light Blue
 PS1+="\[\e[1;34m\]"
 # Hostname
 PS1+="\h"
 # End color
-PS1+="\[\em\]"
+PS1+="\[\e[m\]"
 
 # Start Light green
 PS1+="\[\e[1;32m\]"
 # Another separating text string
 PS1+="]─["
 # End color
-PS1+="\[\em\]"
+PS1+="\[\e[m\]"
 
 # PWD (no color)
 PS1+="\w"
@@ -64,8 +64,6 @@ PS1+="\w"
 PS1+="\[\e[1;32m\]"
 # Final text
 PS1+="]\n└──╼ $ "
-# End color
-PS1+="\[\em\]"
 
 
 # enable color support of ls and also add handy aliases
