@@ -11,7 +11,7 @@ wget https://raw.githubusercontent.com/sosa-daniel/configs/master/bash/.inputrc
 #wget https://raw.githubusercontent.com/sosa-daniel/configs/master/bash/.bashrc
 wget https://raw.githubusercontent.com/sosa-daniel/configs/master/vim/.vimrc
 
-echo "\[\e[1;32m\]┌──[\[\e[m\]\[\e[1;34m\]\D{%b/%d/%Y %-I:%M %p}\[\e[m\]\[\e[1;32m\]]─[\[\e[m\]\u\[\e[1;32m\]@\[\e[m\]\[\e[1;34m\]\h\[\e[m\]\[\e[1;32m\]]─[\[\e[m\]\w\[\e[1;32m\]]\n└──╼ $ \[\e[m\]\[\033[1;32m\]" >> ~/.bashrc
+echo "PS1='\[\e[1;32m\]┌──[\[\e[m\]\[\e[1;34m\]\D{%b/%d/%Y %-I:%M %p}\[\e[m\]\[\e[1;32m\]]─[\[\e[m\]\u\[\e[1;32m\]@\[\e[m\]\[\e[1;34m\]\h\[\e[m\]\[\e[1;32m\]]─[\[\e[m\]\w\[\e[1;32m\]]\n└──╼ $ \[\e[m\]\[\033[1;32m\]'" >> ~/.bashrc
 echo 'export PS1="$PS1\[\033[1;32m\]"' >> ~/.bashrc
 
 
