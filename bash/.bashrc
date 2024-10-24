@@ -63,13 +63,11 @@ PS1+="\w"
 # Start Light green
 PS1+="\[\e[1;32m\]"
 # Final text
-PS1+="]\n└──╼ $ "
+PS1+="]\n└──╼ $"
 # End color
 PS1+="\[\e[m\]"
 
-# Make text green while it's being typed
-export PS1="$PS1\[\033[1;32m\]"
-
+PS1+='\[\e[1;32m\] '
 
 
 # enable color support of ls and also add handy aliases
