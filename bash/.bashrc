@@ -64,6 +64,8 @@ PS1+="\w"
 PS1+="\[\e[1;32m\]"
 # Final text
 PS1+="]\n└──╼ $ "
+# End color
+PS1+="\[\e[m\]"
 
 
 # enable color support of ls and also add handy aliases
