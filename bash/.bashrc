@@ -67,6 +67,10 @@ PS1+="]\n└──╼ $ "
 # End color
 PS1+="\[\e[m\]"
 
+# Make text green while it's being typed
+export PS1="$PS1\[\033[1;32m\]"
+
+
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
